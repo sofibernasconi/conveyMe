@@ -69,7 +69,7 @@ docs/
 | DC gearmotor | [Pololu 150:1 Metal Gearmotor 37D, 24V, with 64 CPR encoder](https://www.pololu.com/product/4697) (encoder not used in this version) |
 | Motor driver | BTS7960 (43A H-bridge) |
 | Microcontroller | Arduino |
-| Potentiometer | 10kΩ, speed and direction control |
+| Potentiometer | Speed and direction control: center stops, left runs in reverse, right runs forward |
 | Power supply | 24V for the motor |
 | Projectors | Mounted overhead, aligned to the belt |
 | Computer | Runs the p5.js sketch in a browser |
@@ -96,7 +96,10 @@ The test sketch (`motor_test.ino`) uses a slightly different wiring: potentiomet
 
 1. Open `arduino/motor_control/motor_control.ino` in the Arduino IDE.
 2. Select your board and port, and upload.
-3. Turning the potentiometer away from the center runs the motor. The center position stops it. One side runs forward, the other side runs in reverse.
+3. The potentiometer controls both direction and speed:
+   - **Center:** the motor stops.
+   - **Turning left:** the motor runs in reverse, faster the further you turn.
+   - **Turning right:** the motor runs forward, faster the further you turn.
 4. Open the Serial Monitor at **115200 baud** to see the potentiometer value.
 
 Adjustable values at the top of the sketch:
