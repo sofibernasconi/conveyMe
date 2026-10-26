@@ -3,6 +3,7 @@
 **Sofía Bernasconi, 2025–2026**
 Kinetic installation · video projection · custom software
 Approx. 300 × 200 × 80 cm · infinite loop
+Built with **Arduino (C++)** for the motor and **p5.js (JavaScript)** for the projection
 
 [![Convey me](docs/cover.jpg)](https://www.youtube.com/watch?v=naS8u7d6TRU)
 
@@ -37,8 +38,8 @@ BTS7960 motor driver                    ceiling-mounted projectors
 DC gearmotor ──► rollers ──► fabric belt ◄─┘
 ```
 
-- **Motion.** A potentiometer sets the speed and direction of the DC motor through a BTS7960 driver. The motor turns the rollers that carry the fabric loop.
-- **Image.** A p5.js sketch plays the video of the body, moves it along the belt, and stretches it inside a defined section of the image. The projectors cast this image onto the moving fabric.
+- **Motion — Arduino (C++).** A potentiometer sets the speed and direction of the DC motor through a BTS7960 driver. The motor turns the rollers that carry the fabric loop.
+- **Image — p5.js (JavaScript).** A p5.js sketch plays the video of the body, moves it along the belt, and stretches it inside a defined section of the image. The projectors cast this image onto the moving fabric.
 
 The two systems run on separate clocks: the motor speed is set by hand, and the projection advances at a fixed speed per frame. They are tuned to match visually.
 
