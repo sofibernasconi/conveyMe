@@ -4,11 +4,11 @@ let pg;
 let materialOffset = 0;
 let speed = -1;
 
-// tramo donde el cuerpo se deforma
+// section of the belt where the body is stretched
 let x1 = 1000;
 let x2 = 3700;
 
-// intensidad de deformación fija
+// fixed stretch intensity
 let stretchAmount = 1;
 
 function setup() {

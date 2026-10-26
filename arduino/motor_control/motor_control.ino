@@ -1,5 +1,5 @@
-// BTS7960 + Potenciómetro
-// Control de velocidad y dirección
+// BTS7960 + potentiometer
+// Motor speed and direction control
 
 #define POT_PIN A0
 
@@ -16,14 +16,14 @@ void setup() {
   pinMode(RPWM, OUTPUT);
   pinMode(LPWM, OUTPUT);
 
-  // partir detenido
+  // start stopped
   analogWrite(RPWM, 0);
   analogWrite(LPWM, 0);
 }
 
 void loop() {
 
-  // leer potenciometro
+  // read potentiometer
   int potValue = analogRead(POT_PIN);
 
   Serial.print("Pot: ");
@@ -38,7 +38,7 @@ void loop() {
     analogWrite(LPWM, 0);
   }
 
-  // izquierda = reverse
+  // left = reverse
   else if (potValue < 512) {
 
     pwm = map(potValue, 0, 512 - deadZone, maxPWM, 0);
@@ -47,7 +47,7 @@ void loop() {
     analogWrite(LPWM, 0);
   }
 
-  // derecha = forward
+  // right = forward
   else {
 
     pwm = map(potValue, 512 + deadZone, 1023, 0, maxPWM);

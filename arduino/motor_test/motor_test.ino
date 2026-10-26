@@ -21,7 +21,7 @@ void loop() {
 
   Serial.println(pot);
 
-  // zona muerta al centro
+  // dead zone around the center
   if (pot > 480 && pot < 540) {
     analogWrite(RPWM, 0);
     analogWrite(LPWM, 0);
