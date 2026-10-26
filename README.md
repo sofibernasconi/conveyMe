@@ -4,9 +4,9 @@
 Kinetic installation · video projection · custom software
 Approx. 300 × 200 × 80 cm · infinite loop
 
-[![Convey me, documentation video](https://img.youtube.com/vi/naS8u7d6TRU/hqdefault.jpg)](https://www.youtube.com/watch?v=naS8u7d6TRU)
+[![Convey me](docs/cover.jpg)](https://www.youtube.com/watch?v=naS8u7d6TRU)
 
-*Click the image to watch the documentation video.*
+▶ **[Watch the documentation video](https://www.youtube.com/watch?v=naS8u7d6TRU)**
 
 ---
 
