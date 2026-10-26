@@ -31,7 +31,7 @@ void loop() {
 
   int pwm = 0;
 
-  // centro = stop
+  // center = stop
   if (potValue > (512 - deadZone) && potValue < (512 + deadZone)) {
 
     analogWrite(RPWM, 0);
